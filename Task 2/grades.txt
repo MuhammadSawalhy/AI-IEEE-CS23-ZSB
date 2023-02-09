@@ -1,0 +1,6 @@
+id name grade - birthyear : gender
+1 Bahnasawe 10 - 1973 : m
+2 Almohamdy 15 - 1987 : m
+3 Maher 18 - 1974 : m
+4 Sharaf 7 - 1999 : m
+5 Gad N/A - 1964 : m
