@@ -1,9 +1,8 @@
 nums = [int(x) for x in input().split()]
 k = int(input())
 
-n = len(nums)
-k %= n
-rotated = nums[-k:] + nums[:n-k]
+k %= len(nums)
+rotated = nums[-k:] + nums[:-k]
 
 print(rotated)
 
