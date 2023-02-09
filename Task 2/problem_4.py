@@ -1,3 +1,4 @@
+# change directory to the containing folder before running the script
 def parse_user(text):
     # id name grade - birthyear : gender
     user = {}
@@ -27,6 +28,8 @@ def parse_users_file(filepath):
         users = list(users)
         f.close()
     except FileNotFoundError:
+        # NOTE: we can use os.path to get the file path relative to this script
+        # without the need to cd into the containing directory, but we aren't allowed to use libs
         print(f"sorry the file {filepath} doesn't exist")
         print("make sure to run this script from the correct working directory")
         exit(1)
@@ -66,3 +69,4 @@ if __name__ == "__main__":
     print(f"ID of the oldest user:\t{oldest_id}")
     print(f"average score:\t{score_sum / len(users)}")
     print(f"gender of the user with highest score:\t{max_score_gender}")
+
