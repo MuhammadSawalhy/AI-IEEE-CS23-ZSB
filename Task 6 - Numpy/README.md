@@ -14,7 +14,7 @@ Jupyter Notebook is a web application that allows you to write code and notes (e
 
 **Instructions to run**
 
-~~~{.bash .number-lines}
+~~~bash {.number-lines}
 # install
 pip install jupyterlab
 # start server
@@ -51,7 +51,7 @@ The core of NumPy is well-optimized C code. Enjoy the flexibility of Python with
 
 More boring facts:
 
-```{.python .numberLines}
+```python {.numberLines}
 >>> arr.reshape(-1)
 # will flaten the arr to be 1D
 
