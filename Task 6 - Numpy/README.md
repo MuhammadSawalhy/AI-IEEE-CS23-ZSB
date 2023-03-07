@@ -1,8 +1,7 @@
 ---
 title: Numpy - Task 6
 author: Muhammad Samir Assawalhy
-date: \today
-paper: a4
+date: March 07, 2023
 ---
 
 # Notes of Task 6
@@ -39,3 +38,28 @@ The core of NumPy is well-optimized C code. Enjoy the flexibility of Python with
 - It was also used to detect gravitational waves by LIGO.
 - Many libraries depends on Numpy such as [Dask](https://dask.org/) ans [CuPy](https://cupy.chainer.org/) to help in GPU accelerated and distributed computing.
 
+**Boring Facts**
+
+- All items in a numpy array:
+  - must have the same datatype
+  - are stored in a contiguous place in the memory
+- We can apply n-D slicing, `arr[1:, :5:-1]`
+- Integers in Python have dynamic sizes depending of the value, use `sys.getsizeof(x)`
+- Integers in NumPy are 32-bit integers by default
+- To do mathematical computations (`+`, `/`, ...) on NumPy arrays, they must have the same sape, `arr.shape`, otherwise you will get `ValueError` exception
+
+More boring facts:
+
+```{.python .numberLines}
+>>> arr.reshape(-1)
+# will flaten the arr to be 1D
+
+>>> arr.reshape(x, y)
+# x * y must equal the size
+
+>>> arr.array([1, 2, 3], dtype="f")
+# "f" will make the array of type float32
+
+>>> arr.array([1, 2, 3], dtype="float")
+# "float" will make the array of type float64
+```
