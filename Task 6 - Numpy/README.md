@@ -46,7 +46,8 @@ The core of NumPy is well-optimized C code. Enjoy the flexibility of Python with
 - We can apply n-D slicing, `arr[1:, :5:-1]`
 - Integers in Python have dynamic sizes depending of the value, use `sys.getsizeof(x)`
 - Integers in NumPy are 32-bit integers by default
-- To do mathematical computations (`+`, `/`, ...) on NumPy arrays, they must have the same sape, `arr.shape`, otherwise you will get `ValueError` exception
+- To do mathematical computations (`+`, `/`, ...) on NumPy arrays, they may have different shapes, `arr.shape`, in such a case NumPy will try to do something called broadcasting.
+    > Input arrays do not need to have the same number of dimensions. The resulting array will have the same number of dimensions as the input array with the greatest number of dimensions
 
 More boring facts:
 
