@@ -8,9 +8,9 @@ author: Muhammad Samir Assawalhy
 Statistics and probability are different but strongly related fields in mathematics.
 
 | Probability                                                                                      | Statistics                                                                                                 |
-| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | --- | --- |
+| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | In probability we make predictions about future events based on models or causes that we assume. | Where as in statistics we analyze the data from past events to infer what that models and causes could be. |
-| In one you are predicting data and                                                               | In the other you are using data to predict.                                                                |     |     |
+| In one you are predicting data and                                                               | In the other you are using data to predict.                                                                |
 
 - There is also almost and opposite relation in these two.
 
