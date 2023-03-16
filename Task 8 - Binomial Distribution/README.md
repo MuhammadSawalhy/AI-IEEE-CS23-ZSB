@@ -74,7 +74,7 @@ $$
 - Properties appears in several groups of data but disappears or reverses when the
 groups are combined.
 
-- Results of statistics can be hugely impacted by how we choose to look at our data.
+- Results of statistics can be hugely impact by how we choose to look at our data.
 
 ## Probability
 
