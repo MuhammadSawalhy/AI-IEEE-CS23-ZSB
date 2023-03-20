@@ -4,7 +4,7 @@ pandoc \
   --number-sections \
   --highlight-style=tango \
   -V colorlinks=true \
-  -V author="Muhammad Samir Assawalhy" \
-  -V date="\today" \
+  --metadata author="Muhammad Samir Assawalhy" \
+  --metadata date="\today" \
   "$1" -o "$2"
 
