@@ -12,10 +12,10 @@ A more human-readable version of this equation is: **Posterior = Prior × Likeli
 
 In Bayes's rule:
 
-- **Prior** ,$P(A)$, refers to the probability of an event occurring before any new evidence is taken into account.
+- **Prior**, $P(A)$, refers to the probability of an event occurring before any new evidence is taken into account.
 - **Sensitivity**, $P(E \mid H)$, refers to the probability that a test will correctly identify individuals who have a particular condition or disease.
-- **Specificity** ,$P(\neg E \mid \neg H)$, refers to the probability that a test will correctly identify individuals who do not have a particular condition or disease.
-- **Posterior** ,$P(H \mid E)$, is the revised or updated probability of an event occurring after taking into consideration new information.
+- **Specificity**, $P(\neg E \mid \neg H)$, refers to the probability that a test will correctly identify individuals who do not have a particular condition or disease.
+- **Posterior**, $P(H \mid E)$, is the revised or updated probability of an event occurring after taking into consideration new information.
 
 These concepts are important in Bayesian inference, which involves updating prior probabilities based on new evidence to arrive at posterior probabilities.
 
@@ -23,7 +23,9 @@ An awesome quot from Grant Sanderson (3b1b) about the theorem:
 
 > The key mantra underlying Bayes' theorem, is that new evidence don't completely change your beliefs in a vacuum; it should update prior beliefs.
 
-![](./assets/Pasted image 20230320075744.png)
+![image](https://user-images.githubusercontent.com/42011920/226482513-ac214268-a4fa-4294-b753-4fc82bf8b2cf.png)
+
+
 We can summarize the theorem as depicted in the above diagram. Using prior probability and a test, we can know what is called posterior probability.
 
 ## Example
@@ -50,4 +52,5 @@ $$
 
 - $P(P)$ is the total probability of a test being +ve which is equivalent to $P(C)\cdot P(P\mid C) + P(\neg C)\cdot P(P \mid \neg C)$.
 
-![](./assets/Pasted image 20230320150014.png)
+![image](https://user-images.githubusercontent.com/42011920/226482540-18d73989-7f47-46ec-87c7-a64dfced7018.png)
+
