@@ -21,14 +21,18 @@ print(s[[index_1, index_2]])
 - `loc`: labeled index
 - `iloc`: numerical index
 - `drop`: remove element from the series, but return the modified series, modification doesn't happen in-place unless use set the kwarg `inpalce=True`.
+- `dropna`, `drop_duplicates`, `unique`
 - `apply`: takes a lambda function to manipulate the values of the series, it is similar to `map` function in python
+- `idxmax`, `idxmin`: index of the max or min value
 
 # pd.DataFrame
 
 ```python
 df = pd.DataFrame(items, index=[...], columns=[...])
 df = pd.read_csv("./data.csv"), pd.read_table(".tsv")
-df[column], df.loc[row]
+df[column], df.loc[row] # instance of pd.Series
+(df.loc[:, 'id'] == df['id']).all() # True
+df.loc[row1:row2, col1:col2] # slice your data frame
 df[column][row] # column first to access a value in the data frame
 df[new_column] = ... # list of values or another column
 df.isnull().sum().sum() # get the number of nan values
@@ -51,4 +55,4 @@ df.groupby(["Year"])["Salary"].sum()
 - `fillna`: to replace any NaN with a specific value
 - `sum`, `mean`, `min`, `max`, `std`, `corr`, `describe`
 - `head`, `tail`
-- `idxmax`, `idxmin`
+- `all`, `any`: if all are true or any is true
